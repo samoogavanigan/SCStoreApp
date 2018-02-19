@@ -1,0 +1,49 @@
+<div layout="row" ng-controller="homeController" ng-cloak ng-init="getPageContent('Registration')">
+    <div flex="10"></div>
+ 
+    <div class="example">
+        <div class="row example-modal">
+          <div class="col-md-6">
+            <div class="modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">{{_pc.TileTitle}}</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>{{_pc.SubTitle}}</p>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <label>{{_pc.NameLabel}}</label>
+                        <input type="text" class="form-control" placeholder="{{_pc.NameLabel}}">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <label>{{_pc.EmailLabel}}</label>
+                        <input type="text" class="form-control" placeholder="{{_pc.EmailLabel}}">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <label>{{_pc.MobileLabel}}</label>
+                        <input type="text" class="form-control" placeholder="{{_pc.MobileLabel}}">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">{{_pc.CloseButton}}</button>
+                    <button type="button" class="btn btn-success">{{_pc.RegisterButton}}</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+ 
+    <div flex="10"></div>
+</div> <!-- end row -->

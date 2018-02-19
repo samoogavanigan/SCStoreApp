@@ -1,0 +1,277 @@
+{
+  "DataForConsumerApp" : {"PrivateProfile": {
+      "PrivateKey": "AZ5V4FYAQ10PQDRT",
+      "Phone": "3451234567",
+      "Email": "ertf@gmail.com",
+      "PhoneStatus": "Verified",
+      "EmailStatus": "Verified",
+      "ScretKey1": "Your childood friend",
+      "SecretAnswer1": "Mani",
+      "ScretKey2": "Your favorite color",
+      "SecretAnswer2": "Red",
+      "LastLogin": "23-12-2018 10:13 AM",
+      "Password": "%fefTfs",
+      "Authendication": "Facebook",
+      "AuthendicationKey": "AZ5V4FYAQ10PQDRT"
+    }},
+  "DataForKadaiApp" : {"PrivateProfile": {
+      "PrivateKey": "AZ5V4FYAQ10PQDRT",
+      "Phone": "3451234567",
+      "Email": "ertf@gmail.com",
+      "PhoneStatus": "Verified",
+      "EmailStatus": "Verified",
+      "ScretKey1": "Your childood friend",
+      "SecretAnswer1": "Mani",
+      "ScretKey2": "Your favorite color",
+      "SecretAnswer2": "Red",
+      "LastLogin": "23-12-2018 10:13 AM",
+      "Password": "%fefTfs",
+      "Authendication": "Facebook",
+      "AuthendicationKey": "AZ5V4FYAQ10PQDRT",
+      "GST": "234567"
+    }},
+  "DataForCommon": {
+    "PageContent": {
+      "REGISTRATION": {
+        "EN_Title": "Registration",
+        "TN_Title": "பதிவு"
+      }
+    },
+    "Pandam": [
+      {"PandamCode" : "KAAI_KATHARIKAAI", "ProductName" : "Brinjal", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "கத்தரிக்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_VENDAIKAAI", "ProductName" : "Lady Finger", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "வெண்டைக்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_AVARAIKAAI", "ProductName" : "", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "அவரைக்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_CHINNAVENGAYAM", "ProductName" : "", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "சின்னவெங்காயம்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_CHOWCHOW", "ProductName" : "", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "சோவ்சோவ்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_ELUMICHAI", "ProductName" : "Cadramom", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "எலுமிச்சை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_KARUVERPILAI", "ProductName" : "Curry Leaf", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "கறிவேற்பிலை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_KOTHAMALLI", "ProductName" : "", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "கொத்தமல்லி", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_KOTHAVARAVANGAI", "ProductName" : "", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "கொத்தவரங்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_KOVAKKAAI", "ProductName" : "", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "கோவக்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_MAANGAI", "ProductName" : "Mango", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "மாங்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_MULLANGI", "ProductName" : "Radish", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "முள்ளைங்கி", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_MURUNGAIKAAI", "ProductName" : "Drumstick", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "முருங்கைக்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_PACHAMILAGAI", "ProductName" : "Green chilli", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "பச்சமிளகாய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_PAGARKAAI", "ProductName" : "Bitter guad", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "பாகற்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_PEERKANKAI", "ProductName" : "", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "பீர்க்கங்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_PERIYAVENGAYAM", "ProductName" : "Big Onion", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "பெரியவெங்காயம்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_POONDU", "ProductName" : "Garlic", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "பூண்டு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_POOSANIKAAI", "ProductName" : "Pumpkin", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "பூசணிக்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_PUDALANGAI", "ProductName" : "Snake guad", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "புடலங்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_SURAIKAAI", "ProductName" : "", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "சுரைக்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_THAKKALI", "ProductName" : "Tomato", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "தக்காளி", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_THENGAI", "ProductName" : "Coconut slice", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "தேங்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_VAALAKKAI", "ProductName" : "Banana vegetable", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "வாழைக்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_VALATHANDU", "ProductName" : "Banana stem", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "வாழைத்தண்டு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_VALLAPPOO", "ProductName" : "Banana flower", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "வாழைப்பூ", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_VELLAIPOOSANI", "ProductName" : "White Pumpkin", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "வெள்ளைப்பூசணி", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KAAI_VELLARIKKAI", "ProductName" : "Cucumber", "ProductCategory" : "Vegetable", "PandamVagai" : "காய்கறி", "PandamName" : "வெள்ளரிக்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "ENG_KAAI_BEETROOT", "ProductName" : "Beet root", "ProductCategory" : "Non Indigenious Vegetable", "PandamVagai" : "வேற்றுநாட்டு காய்கறி", "PandamName" : "பீட்ரூட்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "ENG_KAAI_CARROT", "ProductName" : "Carrot", "ProductCategory" : "Non Indigenious Vegetable", "PandamVagai" : "வேற்றுநாட்டு காய்கறி", "PandamName" : "காரட்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "ENG_KAAI_KALIFLOWER", "ProductName" : "Califlower", "ProductCategory" : "Non Indigenious Vegetable", "PandamVagai" : "வேற்றுநாட்டு காய்கறி", "PandamName" : "காலிஃளார்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "ENG_KAAI_MUTTAIKOSU", "ProductName" : "", "ProductCategory" : "Non Indigenious Vegetable", "PandamVagai" : "வேற்றுநாட்டு காய்கறி", "PandamName" : "முட்டைகோசு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KILANGU_CHEPPANKILANGU", "ProductName" : "", "ProductCategory" : "Root Vegetable", "PandamVagai" : "கிழங்கு", "PandamName" : "சேப்பங்கிழங்கு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KILANGU_KARUNAIKILANGU", "ProductName" : "", "ProductCategory" : "Root Vegetable", "PandamVagai" : "கிழங்கு", "PandamName" : "கருணைக்கிழங்கு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KILANGU_MARAVALLIKKILANGU", "ProductName" : "", "ProductCategory" : "Root Vegetable", "PandamVagai" : "கிழங்கு", "PandamName" : "மரவள்ளிக்கிழங்கு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KILANGU_SARKARAIVALLIKKILANGU", "ProductName" : "Sweet Potatto", "ProductCategory" : "Root Vegetable", "PandamVagai" : "கிழங்கு", "PandamName" : "சர்க்கரைவள்ளிக்கிழங்கு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KILANGU_URULAIKILANGU", "ProductName" : "Pottato", "ProductCategory" : "Root Vegetable", "PandamVagai" : "கிழங்கு", "PandamName" : "உருளைக்கிழங்கு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KEERAI_AGATHIKEERAI", "ProductName" : "", "ProductCategory" : "Leaf Vegetable", "PandamVagai" : "கீரை", "PandamName" : "அகத்திக்கீரை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KEERAI_ARAIKEERAI", "ProductName" : "", "ProductCategory" : "Leaf Vegetable", "PandamVagai" : "கீரை", "PandamName" : "அரைக்கீரை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KEERAI_MURUNGAIKEERAI", "ProductName" : "Drumstick leaf", "ProductCategory" : "Leaf Vegetable", "PandamVagai" : "கீரை", "PandamName" : "முருங்கைக்கீரை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KEERAI_PASALAIKEERAI", "ProductName" : "Spinach", "ProductCategory" : "Leaf Vegetable", "PandamVagai" : "கீரை", "PandamName" : "பசலைக்கீரை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KEERAI_PONNANKANIKEERAI", "ProductName" : "", "ProductCategory" : "Leaf Vegetable", "PandamVagai" : "கீரை", "PandamName" : "பொன்னாங்கனிக்கீரை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KEERAI_PUTHINA", "ProductName" : "Mint Leaf", "ProductCategory" : "Leaf Vegetable", "PandamVagai" : "கீரை", "PandamName" : "புதினா", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KEERAI_SIRUKEERAI", "ProductName" : "", "ProductCategory" : "Leaf Vegetable", "PandamVagai" : "கீரை", "PandamName" : "சிறுகீரை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KEERAI_THANDANGKEERAI", "ProductName" : "", "ProductCategory" : "Leaf Vegetable", "PandamVagai" : "கீரை", "PandamName" : "தண்டங்கீரை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KEERAI_THOOTHUVALAI", "ProductName" : "", "ProductCategory" : "Leaf Vegetable", "PandamVagai" : "கீரை", "PandamName" : "தூதுவளை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KEERAI_VALAIILLAI", "ProductName" : "Banana leaf", "ProductCategory" : "Leaf Vegetable", "PandamVagai" : "கீரை", "PandamName" : "வாழையிலை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "KEERAI_VALLARAI", "ProductName" : "", "ProductCategory" : "Leaf Vegetable", "PandamVagai" : "கீரை", "PandamName" : "வல்லாரை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "POO_MALLGAIPOO", "ProductName" : "Jasmin flower", "ProductCategory" : "Flower", "PandamVagai" : "பூக்கள்", "PandamName" : "மல்லிகை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "POO_SAMPANTHIPOO", "ProductName" : "", "ProductCategory" : "Flower", "PandamVagai" : "பூக்கள்", "PandamName" : "சாமந்தி", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "POO_MARIKKOLLUNTHU", "ProductName" : "", "ProductCategory" : "Flower", "PandamVagai" : "பூக்கள்", "PandamName" : "மரிக்கொழுந்து", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "POO_VADAAMALLI", "ProductName" : "", "ProductCategory" : "Flower", "PandamVagai" : "பூக்கள்", "PandamName" : "வாடாமல்லி", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "POO_PICHIPOO", "ProductName" : "", "ProductCategory" : "Flower", "PandamVagai" : "பூக்கள்", "PandamName" : "பிச்சிப்பூ", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "POO_ROJAPOO", "ProductName" : "Rose flower", "ProductCategory" : "Flower", "PandamVagai" : "பூக்கள்", "PandamName" : "ரோசாப்பூ", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "PALAM_ANNASIPALAM", "ProductName" : "Pinnaple", "ProductCategory" : "Fruit", "PandamVagai" : "பழங்கள்", "PandamName" : "அன்னாசிப்பழம்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "PALAM_CHEETAPALAM", "ProductName" : "", "ProductCategory" : "Fruit", "PandamVagai" : "பழங்கள்", "PandamName" : "சீத்தாப்பழம்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "PALAM_KOYYAPPALAM", "ProductName" : "Koyva", "ProductCategory" : "Fruit", "PandamVagai" : "பழங்கள்", "PandamName" : "கொய்யாப்பழம்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "PALAM_MAAMPALAM", "ProductName" : "Mango fruit", "ProductCategory" : "Fruit", "PandamVagai" : "பழங்கள்", "PandamName" : "மாம்பழம்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "PALAM_MAATHULAMPALAM", "ProductName" : "Pomaganut", "ProductCategory" : "Fruit", "PandamVagai" : "பழங்கள்", "PandamName" : "மாதுளம்பழம்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "PALAM_PALAPALAM", "ProductName" : "Gaint fruit", "ProductCategory" : "Fruit", "PandamVagai" : "பழங்கள்", "PandamName" : "பலாப்பழம்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "PALAM_VALAIPALAM", "ProductName" : "Banana", "ProductCategory" : "Fruit", "PandamVagai" : "பழங்கள்", "PandamName" : "வாழைப்பழம்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "THAANIYAM_ARISI", "ProductName" : "Rice", "ProductCategory" : "Seed", "PandamVagai" : "தானியம்", "PandamName" : "அரிசி", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "THAANIYAM_CHOLLAM", "ProductName" : "Corn seed", "ProductCategory" : "Seed", "PandamVagai" : "தானியம்", "PandamName" : "சோளம்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "THAANIYAM_KAMBU", "ProductName" : "white millet", "ProductCategory" : "Seed", "PandamVagai" : "தானியம்", "PandamName" : "கம்பு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "THAANIYAM_KELVARAGU", "ProductName" : "", "ProductCategory" : "Seed", "PandamVagai" : "தானியம்", "PandamName" : "கேழ்வரகு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "THAANIYAM_SAMAI", "ProductName" : "", "ProductCategory" : "Seed", "PandamVagai" : "தானியம்", "PandamName" : "சாமை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "THAANIYAM_VARAGU", "ProductName" : "", "ProductCategory" : "Seed", "PandamVagai" : "தானியம்", "PandamName" : "வரகு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "THAANIYAM_ELLU", "ProductName" : "Sesame seed", "ProductCategory" : "Seed", "PandamVagai" : "தானியம்", "PandamName" : "எள்ளூ", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "PAYARU_KADALAIPARUPPU", "ProductName" : "", "ProductCategory" : "Nuts", "PandamVagai" : "பருப்பு", "PandamName" : "கடலைப்பருப்பு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "PAYARU_KONDAIKADALAI", "ProductName" : "", "ProductCategory" : "Nuts", "PandamVagai" : "பருப்பு", "PandamName" : "கொண்டக்கடலை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "PAYARU_MOCHAIKOTTAI", "ProductName" : "", "ProductCategory" : "Nuts", "PandamVagai" : "பருப்பு", "PandamName" : "மொச்சைக்கொட்டை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "PAYARU_NILAKADALAI", "ProductName" : "Peanut", "ProductCategory" : "Nuts", "PandamVagai" : "பருப்பு", "PandamName" : "நிலக்கடலை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "PAYARU_PASIPARUPPU", "ProductName" : "", "ProductCategory" : "Nuts", "PandamVagai" : "பருப்பு", "PandamName" : "பாசிப்பருப்பு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "PAYARU_THUVARAMPARUPPU", "ProductName" : "", "ProductCategory" : "Nuts", "PandamVagai" : "பருப்பு", "PandamName" : "துவரம்பருப்பு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "PAYARU_ULUNTHAMPARUPPU", "ProductName" : "", "ProductCategory" : "Nuts", "PandamVagai" : "பருப்பு", "PandamName" : "உளுந்தம்பருப்பு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "ENNAI_KADALAIENNAI", "ProductName" : "Peanut oil", "ProductCategory" : "Cooking Oil", "PandamVagai" : "எண்ணெய்", "PandamName" : "கடலைஎண்ணெய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "ENNAI_NALLAENNAI", "ProductName" : "Sesame oil", "ProductCategory" : "Cooking Oil", "PandamVagai" : "எண்ணெய்", "PandamName" : "நல்லஎண்ணெய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "ENNAI_THENGAIENAI", "ProductName" : "Coconut oil", "ProductCategory" : "Cooking Oil", "PandamVagai" : "எண்ணெய்", "PandamName" : "தேங்காயெண்ணெய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "ENNAI_VELAKENNAI", "ProductName" : "", "ProductCategory" : "Cooking Oil", "PandamVagai" : "எண்ணெய்", "PandamName" : "வெளக்கெண்ணை", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "VASANAI_PORUL_CHEERAGAM", "ProductName" : "cumin seed", "ProductCategory" : "Spice", "PandamVagai" : "வாசனை பொருள்", "PandamName" : "சீரகம்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "VASANAI_PORUL_ELAKKAI", "ProductName" : "", "ProductCategory" : "Spice", "PandamVagai" : "வாசனை பொருள்", "PandamName" : "ஏலக்காய்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "VASANAI_PORUL_KADUGU", "ProductName" : "", "ProductCategory" : "Spice", "PandamVagai" : "வாசனை பொருள்", "PandamName" : "கடுகு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "VASANAI_PORUL_MALLI", "ProductName" : "", "ProductCategory" : "Spice", "PandamVagai" : "வாசனை பொருள்", "PandamName" : "மல்லி", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "VASANAI_PORUL_MANJAL", "ProductName" : "Turmeric", "ProductCategory" : "Spice", "PandamVagai" : "வாசனை பொருள்", "PandamName" : "மஞ்சள்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "VASANAI_PORUL_MILAGIVATHAL", "ProductName" : "Red chilli", "ProductCategory" : "Spice", "PandamVagai" : "வாசனை பொருள்", "PandamName" : "மிளகுவத்தல்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "VASANAI_PORUL_MILLAGU", "ProductName" : "Black pepper", "ProductCategory" : "Spice", "PandamVagai" : "வாசனை பொருள்", "PandamName" : "மிளகு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "VASANAI_PORUL_PERUNCHEERAGAM", "ProductName" : "", "ProductCategory" : "Spice", "PandamVagai" : "வாசனை பொருள்", "PandamName" : "பெருஞ்சீரகம்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "VASANAI_PORUL_PERUNGAYAM", "ProductName" : "Asafotia", "ProductCategory" : "Spice", "PandamVagai" : "வாசனை பொருள்", "PandamName" : "பெருங்காயம்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "VASANAI_PORUL_VENTHAYAM", "ProductName" : "", "ProductCategory" : "Spice", "PandamVagai" : "வாசனை பொருள்", "PandamName" : "வெந்தயம்", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "VASANAI_PORUL_INGI", "ProductName" : "Ginger", "ProductCategory" : "Spice", "PandamVagai" : "வாசனை பொருள்", "PandamName" : "இஞ்சி", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "SUVAYOOTI_PULI", "ProductName" : "Tamerin", "ProductCategory" : "Tasting agent", "PandamVagai" : "சுவையூட்டி", "PandamName" : "புளி", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"},
+{"PandamCode" : "SUVAYOOTI_UPPU", "ProductName" : "Sea salt", "ProductCategory" : "Tasting agent", "PandamVagai" : "சுவையூட்டி", "PandamName" : "உப்பு", "Edai" : "கிராம்",  "WeightCode" : "g","PublicKey":"AZ5V4FYAQ10PQDRT"}
+    ],
+    "Thadappulli": [
+      {
+        "PulliCode": "VADAVALLI_CBE_TN",
+        "Point": "Vadavalli",
+        "Pulli": "Vadavalli",
+        "Latitude": "12.23",
+        "Longitude": "12.410066",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "PulliCode": "GNANAPATHY_CBE_TN",
+        "Point": "Gnanapathy",
+        "Pulli": "Gnanapathy",
+        "Latitude": "12.23",
+        "Longitude": "12.410066",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      }
+    ],
+    "PandamVagai": [
+      {
+        "VagaiCode": "KAAI_",
+        "PandamCategory": "Vegetable",
+        "PandamVagai": "காய்கறி",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "VagaiCode": "ENG_KAAI_",
+        "PandamCategory": "Non Indigenious Vegetable",
+        "PandamVagai": "வேற்றுநாட்டு காய்கறி",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "VagaiCode": "KILANGU_",
+        "PandamCategory": "Root Vegetable",
+        "PandamVagai": "கிழங்கு",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "VagaiCode": "KEERAI_",
+        "PandamCategory": "Leaf Vegetable",
+        "PandamVagai": "கீரை",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "VagaiCode": "POO_",
+        "PandamCategory": "Flower",
+        "PandamVagai": "பூக்கள்",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "VagaiCode": "PALAM_",
+        "PandamCategory": "Fruit",
+        "PandamVagai": "பழங்கள்",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "VagaiCode": "THAANIYAM_",
+        "PandamCategory": "Seed",
+        "PandamVagai": "தானியம்",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "VagaiCode": "PAYARU_",
+        "PandamCategory": "Nuts",
+        "PandamVagai": "பருப்பு",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "VagaiCode": "ENNAI_",
+        "PandamCategory": "Cooking Oil",
+        "PandamVagai": "எண்ணெய்",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "VagaiCode": "VASANAI_PORUL_",
+        "PandamCategory": "Spice",
+        "PandamVagai": "வாசனை பொருள்",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "VagaiCode": "SUVAYOOTI_",
+        "PandamCategory": "Tasting agent",
+        "PandamVagai": "சுவையூட்டி",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      }
+    ],
+    "Vandi": [
+      {
+        "Code": "2W10KG",
+        "Name": "By Cycle",
+        "LoadCapacity": "10Kg",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "Code": "2W50KG",
+        "Name": "By Cycle",
+        "LoadCapacity": "50Kg",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "Code": "2W100KG",
+        "Name": "By Cycle",
+        "LoadCapacity": "100Kg",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "Code": "3W250KG",
+        "Name": "3 Wheeler",
+        "LoadCapacity": "250Kg",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "Code": "3W500KG",
+        "Name": "3 Wheeler",
+        "LoadCapacity": "500Kg",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "Code": "4W500KG",
+        "Name": "4 Wheeler",
+        "LoadCapacity": "500Kg",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "Code": "4W1000KG",
+        "Name": "4 Wheeler",
+        "LoadCapacity": "1000Kg",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "Code": "4W1500KG",
+        "Name": "4 Wheeler",
+        "LoadCapacity": "1500Kg",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      },
+      {
+        "Code": "4W2000KG",
+        "Name": "4 Wheeler",
+        "LoadCapacity": "2000Kg",
+        "PublicKey": "AZ5V4FYAQ10PQDRT"
+      }
+    ]
+  }
+}
