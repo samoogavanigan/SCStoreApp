@@ -1080,8 +1080,8 @@
           "ContentCode": "MNU_HOME"
         }
       ],
-      "Tile": {
-        "Registration": {"en":{
+      "Tiles": {
+        "Registration": {"EN":{
           "TileTitle": "Registration",
           "SubTitle": "New user registration",
           "NameLabel": "Name",
@@ -1089,7 +1089,7 @@
           "MobileLabel": "Mobile",
           "CloseButton": "Close",
           "RegisterButton": "Register"
-        },"tn":{
+        },"TA":{
           "TileTitle": "பதிவு",
           "SubTitle": "புதிய பயனாளர் பதிவு",
           "NameLabel": "பெயர்",

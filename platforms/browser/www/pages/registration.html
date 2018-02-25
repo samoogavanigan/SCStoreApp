@@ -1,6 +1,6 @@
-<div layout="row" ng-controller="homeController" ng-cloak ng-init="getPageContent('Registration')">
+<div layout="row" ng-controller="homeController" ng-cloak>
     <div flex="10"></div>
- 
+
     <div class="example">
         <div class="row example-modal">
           <div class="col-md-6">
@@ -9,32 +9,33 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">{{_pc.TileTitle}}</h4>
+                    <h4 class="modal-title">{{_PageContentData.Registration[_localeCode].TileTitle}}</h4>
                   </div>
                   <div class="modal-body">
-                    <p>{{_pc.SubTitle}}</p>
+                    <p>{{_PageContentData.Registration[_localeCode].SubTitle}}</p>
+                    
                     <div class="row">
                       <div class="col-xs-12">
-                        <label>{{_pc.NameLabel}}</label>
-                        <input type="text" class="form-control" placeholder="{{_pc.NameLabel}}">
+                        <label>{{_PageContentData.Registration[_localeCode].NameLabel}}</label>
+                        <input type="text" class="form-control" placeholder="{{_PageContentData.Registration[_localeCode].NameLabel}}">
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-xs-12">
-                        <label>{{_pc.EmailLabel}}</label>
-                        <input type="text" class="form-control" placeholder="{{_pc.EmailLabel}}">
+                        <label>{{_PageContentData.Registration[_localeCode].EmailLabel}}</label>
+                        <input type="text" class="form-control" placeholder="{{_PageContentData.Registration[_localeCode].EmailLabel}}">
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-xs-12">
-                        <label>{{_pc.MobileLabel}}</label>
-                        <input type="text" class="form-control" placeholder="{{_pc.MobileLabel}}">
+                        <label>{{_PageContentData.Registration[_localeCode].MobileLabel}}</label>
+                        <input type="text" class="form-control" placeholder="{{_PageContentData.Registration[_localeCode].MobileLabel}}">
                       </div>
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">{{_pc.CloseButton}}</button>
-                    <button type="button" class="btn btn-success">{{_pc.RegisterButton}}</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">{{_PageContentData.Registration[_localeCode].CloseButton}}</button>
+                    <button type="button" class="btn btn-success">{{_PageContentData.Registration[_localeCode].RegisterButton}}</button>
                   </div>
                 </div>
               </div>
