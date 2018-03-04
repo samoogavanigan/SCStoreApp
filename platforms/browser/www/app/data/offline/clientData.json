@@ -1,6 +1,5 @@
 {
   "CommonApp": {
-    
     "Pandam": [
       {
         "PandamCode": "KAAI_KATHARIKAAI",
@@ -1071,7 +1070,49 @@
         "Country": "India",
         "Code": ""
       }
-    ]
+    ],
+    "PageContent": {
+      "CommonLabel": {
+        "EN": {
+          "PleaseSelect": "Please Select"
+        },
+        "TA": {
+          "PleaseSelect": "தெரிவுசெய்க"
+        }
+      },
+      "CommonButton": {
+        "EN": {
+          "Clear": "Clear",
+          "Close": "Close",
+          "Register": "Register"
+        },
+        "TA": {
+          "Clear": "தெளிவாக்கு",
+          "Close": "மூடிடு",
+          "Register": "பதிவிடு"
+        }
+      },
+      "CommonMessage": {
+        "EN": {
+          "minlength": "Your name is too short.",
+          "maxlength": "Your name is too long.",
+          "required": "Your name is required.",
+          "email": "This needs to be a valid email.",
+          "mobile": "This not a valid phone number.",
+          "emptyChoice": "Select a valid choice.",
+          "pleaseWait": "Please wait."
+        },
+        "TA": {
+          "minlength": "சற்று அதிக உள்ளீடு தேவை.",
+          "maxlength": "உள்ளீட்டின் அளவைக் சுருக்கவும்.",
+          "required": "உள்ளீடு தேவை.",
+          "email": "ஈமெயில் முகவரி தவறாக உள்ளது.",
+          "mobile": "கைபேசி எண்ணை சரிபார்க்கவும்.",
+          "emptyChoice": "சரியான தெரிவை தேர்வுசெய்க.",
+          "pleaseWait": "தயவிட்டு காத்திருக்கவும்."
+        }
+      }
+    }
   },
   "ConsumerAppData": {
     "PageContent": {
@@ -1081,23 +1122,28 @@
         }
       ],
       "Tiles": {
-        "Registration": {"EN":{
-          "TileTitle": "Registration",
-          "SubTitle": "New user registration",
-          "NameLabel": "Name",
-          "EmailLabel": "Email",
-          "MobileLabel": "Mobile",
-          "CloseButton": "Close",
-          "RegisterButton": "Register"
-        },"TA":{
-          "TileTitle": "பதிவு",
-          "SubTitle": "புதிய பயனாளர் பதிவு",
-          "NameLabel": "பெயர்",
-          "EmailLabel": "மின்னஞ்சல்",
-          "MobileLabel": "அலைபேசி",
-          "CloseButton": "மூடிடு",
-          "RegisterButton": "பதிவிடு"
-        }}
+        "Registration": {
+          "EN": {
+            "TileTitle": "Registration",
+            "SubTitle": "New user registration",
+            "NameLabel": "Name",
+            "EmailLabel": "Email",
+            "MobileLabel": "Mobile",
+            "AppUserTypeLabel": "Application usage",
+            "CloseButton": "Close",
+            "RegisterButton": "Register"
+          },
+          "TA": {
+            "TileTitle": "பதிவு",
+            "SubTitle": "புதிய பயனாளர் பதிவு",
+            "NameLabel": "பெயர்",
+            "EmailLabel": "மின்னஞ்சல்",
+            "MobileLabel": "அலைபேசி",
+            "AppUserTypeLabel": "உங்களின் தேவை",
+            "CloseButton": "மூடிடு",
+            "RegisterButton": "பதிவிடு"
+          }
+        }
       }
     },
     "PublicProfile": {

@@ -34,6 +34,8 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        
+        app.apiRoot = 'http://localhost:3000/api/';
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

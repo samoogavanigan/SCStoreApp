@@ -1,6 +1,6 @@
-<div layout="row" ng-controller="homeController" ng-cloak>
+<div layout="row" ng-controller="homeController" ng-cloak cg-busy="{promise:newRegistrationPromise}">
     <div flex="10"></div>
-
+	<form name="newUserForm" novalidate>
     <div class="example">
         <div class="row example-modal">
           <div class="col-md-6">
@@ -8,34 +8,83 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
                     <h4 class="modal-title">{{_PageContentData.Registration[_localeCode].TileTitle}}</h4>
                   </div>
                   <div class="modal-body">
+					
                     <p>{{_PageContentData.Registration[_localeCode].SubTitle}}</p>
                     
                     <div class="row">
                       <div class="col-xs-12">
                         <label>{{_PageContentData.Registration[_localeCode].NameLabel}}</label>
-                        <input type="text" class="form-control" placeholder="{{_PageContentData.Registration[_localeCode].NameLabel}}">
+                        <input type="text" name="Name" class="form-control"
+                         placeholder="{{_PageContentData.Registration[_localeCode].NameLabel}}" ng-model="newUserFormData.Name" 
+                         ng-minlength="5" ng-maxlength="10" required>
+
+						<div class="help-block" ng-messages="newUserForm.Name.$error" ng-if="newUserForm.Name.$touched">
+						    <p ng-message="minlength">{{_CommonMessageData[_localeCode].minlength}}</p>
+						    <p ng-message="maxlength">{{_CommonMessageData[_localeCode].maxlength}}</p>
+						    <p ng-message="required">{{_CommonMessageData[_localeCode].required}}</p>
+						</div>
+
                       </div>
                     </div>
+                    
                     <div class="row">
                       <div class="col-xs-12">
                         <label>{{_PageContentData.Registration[_localeCode].EmailLabel}}</label>
-                        <input type="text" class="form-control" placeholder="{{_PageContentData.Registration[_localeCode].EmailLabel}}">
+                        <input type="email" name="Email" class="form-control"
+                         placeholder="{{_PageContentData.Registration[_localeCode].EmailLabel}}" ng-model="newUserFormData.Email"
+                         required>
+                        
+						<div class="help-block" ng-messages="newUserForm.Email.$error" ng-if="newUserForm.Email.$touched">
+						    <p ng-message="email">{{_CommonMessageData[_localeCode].email}}</p>
+						    <p ng-message="required">{{_CommonMessageData[_localeCode].required}}</p>
+						</div>
                       </div>
                     </div>
+                   
                     <div class="row">
                       <div class="col-xs-12">
                         <label>{{_PageContentData.Registration[_localeCode].MobileLabel}}</label>
-                        <input type="text" class="form-control" placeholder="{{_PageContentData.Registration[_localeCode].MobileLabel}}">
+                        <input type="text" name="Mobile" class="form-control" ng-model="newUserFormData.Mobile"
+                         placeholder="{{_PageContentData.Registration[_localeCode].MobileLabel}}"
+                         ng-minlength="10" ng-maxlength="10"
+                         required>
+                        
+						<div class="help-block" ng-messages="newUserForm.Mobile.$error" ng-if="newUserForm.Mobile.$touched">
+						    <p ng-message="email">{{_CommonMessageData[_localeCode].mobile}}</p>
+						    <p ng-message="minlength">{{_CommonMessageData[_localeCode].mobile}}</p>
+						    <p ng-message="maxlength">{{_CommonMessageData[_localeCode].mobile}}</p>
+						    <p ng-message="required">{{_CommonMessageData[_localeCode].required}}</p>
+						</div> 
+						                        
                       </div>
                     </div>
+					
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <label>{{_PageContentData.Registration[_localeCode].AppUserTypeLabel}}</label>
+                        
+						<select name="AppsTypeChoice" class="selecter_3 form-control" ng-model="newUserFormData.AppsTypeChoice" 
+							data-selecter-options='{"cover":"true"}' minlength="3" required>
+							<option value="-1">{{_CommonLabelData[_localeCode].PleaseSelect}}</option>
+							<option ng-repeat='appopt in _PageMasterData.AppMode[_localeCode]' value="{{appopt.AppCode}}">{{appopt.AppName}}</option>
+						</select>
+						
+						<div class="help-block" ng-messages="newUserForm.AppsTypeChoice.$error" ng-if="newUserForm.AppsTypeChoice.$touched">
+							<p ng-message="minlength">{{_CommonMessageData[_localeCode].emptyChoice}}</p>
+						    <p ng-message="required">{{_CommonMessageData[_localeCode].required}}</p>
+						</div>						
+                      </div>
+                    </div> 
+                    					
                   </div>
+                   
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">{{_PageContentData.Registration[_localeCode].CloseButton}}</button>
-                    <button type="button" class="btn btn-success">{{_PageContentData.Registration[_localeCode].RegisterButton}}</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">{{_CommonButtonData[_localeCode].Clear}}</button>
+                    <button type="button" class="btn btn-success" ng-click="newRegistration()">{{_CommonButtonData[_localeCode].Register}}</button>
                   </div>
                 </div>
               </div>
@@ -44,7 +93,7 @@
 
         </div>
       </div>
+	</form>
 
- 
     <div flex="10"></div>
 </div> <!-- end row -->
