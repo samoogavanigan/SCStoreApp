@@ -78,7 +78,20 @@
 						    <p ng-message="required">{{_CommonMessageData[_localeCode].required}}</p>
 						</div>						
                       </div>
-                    </div> 
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="g-recaptcha" data-sitekey="6LevbkoUAAAAAHTvNuVOfMNGGq07cvOXtDIeTBHg"></div>
+                        <div
+						      vc-recaptcha
+						      key="model.key"
+						      ng-model="newUserForm.gRecaptchaResponse"
+						      lang="model.lang"
+						      ng-model="myFields.myRecaptchaResponse"></div>
+						                        
+                      </div>
+                    </div>
                     					
                   </div>
                    

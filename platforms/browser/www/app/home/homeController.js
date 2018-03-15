@@ -7,25 +7,19 @@ myapp.controller('homeController', function($scope, $rootScope, $http){
 	
 	$scope.newRegistrationPromise = null;
 	
-	
+	$scope.model = {
+            key: '6LevbkoUAAAAAHTvNuVOfMNGGq07cvOXtDIeTBHg',
+            lang : $scope._localeCode
+        };
+
 	
 	//app.apiRoot
 	$scope.newRegistration = function() {
-		var newUser = {
-				  "UserName": "Kannan1",
-				  "UserPassword": "test1231",
-				  "Phone": "7007001235",
-				  "Email": "vorkathome@gmail.com",
-				  "EmailStatus": "Submitted",
-				  "MobileStatus": "Submitted",
-				  "FirstName": "Kannan",
-				  "LastName": "Raja"
-				};
 		
 		var req = {
 		 method: 'POST',
 		 url: app.apiRoot + 'StoreUsers',
-		 data: newUser
+		 data: $scope.newUserFormData
 		}
 	
 		$scope.newRegistrationPromise = $http(req).then(function(data){
