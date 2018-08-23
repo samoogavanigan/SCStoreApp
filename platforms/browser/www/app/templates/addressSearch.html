@@ -1,0 +1,59 @@
+<style>
+.dirAddress a:hover {
+	color: #228be6;
+}
+</style>
+<div class="dirAddress">
+	<div class="row">
+		<div class="col-xs-10">
+			<ol class="breadcrumb" style="margin-bottom: 5px;">
+				<li><a href="" ng-click="ChangeAddressDistrict(addressInfo)">{{addressInfo.District}}</a></li>
+				<li><a href="" ng-click="ChangeAddressCity(addressInfo)">{{addressInfo.City}}</a></li>
+				<li><a href="" ng-click="ChangeAddressArea(addressInfo)">{{addressInfo.Area}}</a></li>
+				<li ng-show="addressInfo.ModeStatus == 'Complete'"><a href="#">{{addressInfo.Postalcode}}</a></li>
+				<li class="active">{{addressInfo.Street}}</li>
+			</ol>
+		</div>
+		<div class="col-xs-2" ng-show="IsGeoLocationPermitted()">
+			<a href="" ng-click="SetGPSAddress()"><i class="fas fa-3x fa-map-marker-alt"></i></a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12"
+			ng-show="addressInfo.District == null || addressInfo.ModeStatus == 'EditDistrict'">
+			<select name="address_District" class="selecter_3 form-control"
+				ng-model="addressInfo.District"
+				ng-repeat="admdata in $root._AdministrativeData[$root._localeCode]"
+				ng-change="setDistrict(addressInfo)">
+				<option value="" ng-selected="selected">{{$root._CommonMessageData[$root._localeCode].selectoption}}</option>
+				<option value="{{admdata.District}}">{{admdata.District}}</option>
+			</select>
+		</div>
+		<div class="col-xs-12"
+			ng-show="(addressInfo.District != null && addressInfo.City == null) || addressInfo.ModeStatus == 'EditCity'">
+			<select name="address_City" class="selecter_3 form-control"
+				ng-model="addressInfo.City"
+				ng-repeat="admdata in $root._AdministrativeData[$root._localeCode]"
+				ng-change="setCity(addressInfo)">
+				<option value="" ng-selected="selected">{{$root._CommonMessageData[$root._localeCode].selectoption}}</option>
+				<option value="{{admdata.City}}">{{admdata.City}}</option>
+			</select>
+		</div>
+		<div class="col-xs-12"
+			ng-show="(addressInfo.District != null && addressInfo.City != null && addressInfo.Area == null) || addressInfo.ModeStatus == 'EditArea'">
+			<select name="address_Area" class="selecter_3 form-control"
+				ng-model="addressInfo.Area"
+				ng-repeat="admdata in $root._AdministrativeData[$root._localeCode]"
+				ng-change="setArea(addressInfo, admdata)">
+				<option value="" ng-selected="selected">{{$root._CommonMessageData[$root._localeCode].selectoption}}</option>
+				<option value="{{admdata.Area}}">{{admdata.Area}}</option>
+			</select>
+		</div>
+		<div class="col-xs-12"
+			ng-show="addressInfo.District != null && addressInfo.City != null && addressInfo.Area != null">
+			<input type="text" name="address_Street" class="form-control"
+				placeholder="Street address" ng-model="addressInfo.Street"
+				ng-minlength="5" ng-maxlength="100" required>
+		</div>
+	</div>
+</div>

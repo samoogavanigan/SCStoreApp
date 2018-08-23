@@ -27,6 +27,9 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        
+        
+        
     },
     // deviceready Event Handler
     //
@@ -34,6 +37,8 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        var map = new GoogleMap();
+        map.initialize();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -47,3 +52,20 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+var addMarkersToMap = function(map){
+	var latitudeAndLongitudeOne = new google.maps.LatLng('-33.890542','151.274856');
+
+	var markerOne = new google.maps.Marker({
+	position: latitudeAndLongitudeOne,
+	map: map
+	});
+
+	var latitudeAndLongitudeTwo = new google.maps.LatLng('57.77828', '14.17200');
+
+	var markerOne = new google.maps.Marker({
+	position: latitudeAndLongitudeTwo,
+	map: map
+	});
+	 }
+	}

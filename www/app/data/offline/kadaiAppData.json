@@ -1,0 +1,46 @@
+{
+  "KadaiAppData": {
+    "PublicProfile": {
+      "PublicKey": "AZ5V4FYAQ10PQDRT",
+      "KadaiNumber": "ERD101",
+      "Name": "Murugan Store",
+      "Address": "23 Market str Kootturoad Erode 641110",
+      "Phone": "9845163256",
+      "Lattitude": "12.23",
+      "Longtitude": "12.31"
+    },
+    "PrivateProfile": {
+      "PrivateKey": "AZ5V4FYAQ10PQDRT",
+      "Phone": "3451234567",
+      "Email": "ertf@gmail.com",
+      "PhoneStatus": "Verified",
+      "EmailStatus": "Verified",
+      "ScretKey1": "Your childood friend",
+      "SecretAnswer1": "Mani",
+      "ScretKey2": "Your favorite color",
+      "SecretAnswer2": "Red",
+      "LastLogin": "23-12-2018 10:13 AM",
+      "Password": "%fefTfs",
+      "Authendication": "Facebook",
+      "AuthendicationKey": "AZ5V4FYAQ10PQDRT",
+      "GST": "234567"
+    },
+    "ItemOnSale": [
+      {
+        "ItemCode": "KAAI_KATHARIKAAI",
+        "Price": "12.00",
+        "Quantity": "250",
+        "Weight": "gram"
+      }
+    ],
+    "ItemOnStock": [
+      {
+        "ItemCode": "KAAI_KATHARIKAAI",
+        "OpeningStock": "2000",
+        "Purchase": "2000",
+        "Sold": "1000",
+        "Balance": "3000"
+      }
+    ]
+  }
+}

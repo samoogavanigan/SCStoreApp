@@ -1071,6 +1071,12 @@
         "Code": ""
       }
     ],
+    "Regions" : {
+      "Administrative":{
+        "TA": [{"District":"விருதுநகர்","Taluk":"ராஜபாளையம்"}],
+        "EN":[{"District":"Virudunagar","Taluk":"Rajapalayam"}]
+      }
+    },
     "PageContent": {
       "CommonLabel": {
         "EN": {
@@ -1143,7 +1149,45 @@
             "CloseButton": "மூடிடு",
             "RegisterButton": "பதிவிடு"
           }
-        }
+        },
+        "LoginPage": {
+          "EN": {
+            "TileTitle": "Login",
+            "SubTitle": "",
+            "NameLabel": "User Name",
+            "PasswordLabel" :"Password",
+            "ClearButton": "Clear",
+            "LoginButton": "Login",
+            "ForgotLoginButton" :"Forgot Login",
+            "RegisterUserButton" :"New Registration"
+          },
+          "TA": {
+            "TileTitle": "உள் நுழை",
+            "SubTitle": "",
+            "NameLabel": "பயனர் பெயர்",
+            "PasswordLabel":"கடவுச்சொல்",
+            "ClearButton": "தெளிவாக்கு",
+            "LoginButton": "நுழைக",
+            "ForgotLoginButton" :"மறந்துவிட்டது",
+            "RegisterUserButton" :"பயனர் பதிவு"
+          }
+        },
+        "StoreLocator": {
+          "EN": {
+            "TileTitle": "Find Store",
+            "SubTitle": "",
+            "AddressLabel": "Address",
+            "ClearButton": "Clear",
+            "FindButton" :"Search"
+          },
+          "TA": {
+            "TileTitle": "அங்காடி தேடுதல்",
+            "SubTitle": "",
+            "AddressLabel": "முகவரி",
+            "ClearButton": "தெளிவாக்கு",
+            "FindButton" :"தேடு"
+          }
+        } 
       }
     },
     "PublicProfile": {

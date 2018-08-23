@@ -1,4 +1,11 @@
 eclipse.preferences.version=1
 encoding//www/app/data/offline/clientData.json=UTF-8
+encoding//www/app/data/offline/commonAppData.json=UTF-8
+encoding//www/app/data/offline/consumerAppData.json=UTF-8
+encoding//www/app/data/offline/kadaiAppData.json=UTF-8
 encoding//www/app/data/offline/masterData.json=UTF-8
+encoding//www/app/data/offline/packerAppData.json=UTF-8
+encoding//www/app/data/offline/producerAppData.json=UTF-8
 encoding//www/app/data/server/online.data.json=UTF-8
+encoding//www/app/templates/addressSearch.html=UTF-8
+encoding//www/home.html=UTF-8

@@ -31,6 +31,9 @@
     <meta name="smartaddon-verification" content="936e8d43184bc47ef34e25e426c508fe" />
 	<link rel="shortcut icon" href="favicon_16.ico"/>
     <link rel="bookmark" href="favicon_16.ico"/>
+
+	<!--  <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />-->
+
 	
 	<!-- site css -->
     <link rel="stylesheet" href="css/site.min.css">
@@ -44,8 +47,9 @@
     <script type="text/javascript" src="js/site.min.js"></script>
 	
 	
+
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!--  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
     <!-- Good default declaration:
     * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
     * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
@@ -58,6 +62,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/angular-busy.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
 
      
@@ -81,10 +86,11 @@
             <p class="event received">Device is Ready</p>
         </div>
     </div>
-
-
+		 
+<!--<script type="text/javascript" src="js/google/googlemap.js"></script>-->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    
     <script type="text/javascript">
         app.initialize();
     </script>
@@ -97,9 +103,16 @@
 	<div ng-controller="pageContentController">
 		<div ng-include src="'views/header.html'"></div>
 		
+        <div class="row" ng-show="Site.Status=='Down'">
+            <div class="alert alert-danger">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <strong>Oh snap!</strong> {{Site.Info[_localeCode].Message}}
+            </div>
+        </div>
+        
 	    <div ng-include src="'views/navigation.html'"></div>    
 	
-	    <div id="view" ng-view></div>   
+	    <div id="view" ng-view></div>
 	
 	    <div ng-include src="'views/footer.html'"></div>
 	</div>   
@@ -119,22 +132,43 @@
 <script type="text/javascript" src="js/angular/angular-busy.js"></script>
 <script type="text/javascript" src="js/angular/angular-recaptcha.min.js"></script>
 
- 
+
+
 <!-- app -->
 <script type="text/javascript" src="app/app.js"></script>
 
 <!-- controller -->
 <script type="text/javascript" src="app/pageContentController.js"></script>
 <script type="text/javascript" src="app/home/homeController.js"></script>
+<script type="text/javascript" src="app/common/commonController.js"></script>
 <script type="text/javascript" src="app/products/products.controller.js"></script>
 <script type="text/javascript" src="app/products/products.factory.js"></script>
 
 
 
 <script src='https://www.google.com/recaptcha/api.js'></script>
+<!--
+<h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
 
-
-
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe5KgIBbEeEuaoOpnAak2xUhTQLQJnzv8&callback=initMap">
+    </script>
+-->
     
 
 

@@ -1073,8 +1073,8 @@
     ],
     "Regions" : {
       "Administrative":{
-        "TA": [{"District":"விருதுநகர்","Taluk":"ராஜபாளையம்"}],
-        "EN":[{"District":"Virudunagar","Taluk":"Rajapalayam"}]
+        "TA": [{"District":"விருதுநகர்","City":"ராஜபாளையம்","Area":"சத்திரப்பட்டி","Postalcode":"621002"}],
+        "EN":[{"District":"Virudunagar","City":"Rajapalayam","Area":"Chatrapatti","Postalcode":"621002"}]
       }
     },
     "PageContent": {
@@ -1103,6 +1103,7 @@
           "minlength": "Your name is too short.",
           "maxlength": "Your name is too long.",
           "required": "Your name is required.",
+          "selectoption":"Please select",
           "email": "This needs to be a valid email.",
           "mobile": "This not a valid phone number.",
           "emptyChoice": "Select a valid choice.",
@@ -1112,6 +1113,7 @@
           "minlength": "சற்று அதிக உள்ளீடு தேவை.",
           "maxlength": "உள்ளீட்டின் அளவைக் சுருக்கவும்.",
           "required": "உள்ளீடு தேவை.",
+          "selectoption":"உள்ளீடை தேர்வுசெய்க",
           "email": "ஈமெயில் முகவரி தவறாக உள்ளது.",
           "mobile": "கைபேசி எண்ணை சரிபார்க்கவும்.",
           "emptyChoice": "சரியான தெரிவை தேர்வுசெய்க.",
@@ -1119,149 +1121,5 @@
         }
       }
     }
-  },
-  "ConsumerAppData": {
-    "PageContent": {
-      "Menu": [
-        {
-          "ContentCode": "MNU_HOME"
-        }
-      ],
-      "Tiles": {
-        "Registration": {
-          "EN": {
-            "TileTitle": "Registration",
-            "SubTitle": "New user registration",
-            "NameLabel": "Name",
-            "EmailLabel": "Email",
-            "MobileLabel": "Mobile",
-            "AppUserTypeLabel": "Application usage",
-            "CloseButton": "Close",
-            "RegisterButton": "Register"
-          },
-          "TA": {
-            "TileTitle": "பதிவு",
-            "SubTitle": "புதிய பயனாளர் பதிவு",
-            "NameLabel": "பெயர்",
-            "EmailLabel": "மின்னஞ்சல்",
-            "MobileLabel": "அலைபேசி",
-            "AppUserTypeLabel": "உங்களின் தேவை",
-            "CloseButton": "மூடிடு",
-            "RegisterButton": "பதிவிடு"
-          }
-        },
-        "LoginPage": {
-          "EN": {
-            "TileTitle": "Login",
-            "SubTitle": "",
-            "NameLabel": "User Name",
-            "PasswordLabel" :"Password",
-            "ClearButton": "Clear",
-            "LoginButton": "Login",
-            "ForgotLoginButton" :"Forgot Login",
-            "RegisterUserButton" :"New Registration"
-          },
-          "TA": {
-            "TileTitle": "உள் நுழை",
-            "SubTitle": "",
-            "NameLabel": "பயனர் பெயர்",
-            "PasswordLabel":"கடவுச்சொல்",
-            "ClearButton": "தெளிவாக்கு",
-            "LoginButton": "நுழைக",
-            "ForgotLoginButton" :"மறந்துவிட்டது",
-            "RegisterUserButton" :"பயனர் பதிவு"
-          }
-        },
-        "StoreLocator": {
-          "EN": {
-            "TileTitle": "Find Store",
-            "SubTitle": "",
-            "AddressLabel": "Address",
-            "ClearButton": "Clear",
-            "FindButton" :"Search"
-          },
-          "TA": {
-            "TileTitle": "அங்காடி தேடுதல்",
-            "SubTitle": "",
-            "AddressLabel": "முகவரி",
-            "ClearButton": "தெளிவாக்கு",
-            "FindButton" :"தேடு"
-          }
-        } 
-      }
-    },
-    "PublicProfile": {
-      "PublicKey": "AZ5V4FYAQ10PQDRT",
-      "Peyar": "Ravi",
-      "Name": "Ravi",
-      "Address": "Manikkam theru",
-      "PinCode": "642001",
-      "Lattitude": "12.23",
-      "Longtitude": "12.31"
-    },
-    "CartItem": [
-      {
-        "ItemCode": "KAAI_KATHARIKAAI",
-        "ItemName": "Brinjal",
-        "Qty": "200",
-        "Unit": "Gram"
-      }
-    ],
-    "WishList": [
-      {
-        "ItemCode": "KAAI_KATHARIKAAI",
-        "ItemName": "Brinjal"
-      }
-    ]
-  },
-  "KadaiAppData": {
-    "PublicProfile": {
-      "PublicKey": "AZ5V4FYAQ10PQDRT",
-      "KadaiNumber": "ERD101",
-      "Name": "Murugan Store",
-      "Address": "23 Market str Kootturoad Erode 641110",
-      "Phone": "9845163256",
-      "Lattitude": "12.23",
-      "Longtitude": "12.31"
-    },
-    "PrivateProfile": {
-      "PrivateKey": "AZ5V4FYAQ10PQDRT",
-      "Phone": "3451234567",
-      "Email": "ertf@gmail.com",
-      "PhoneStatus": "Verified",
-      "EmailStatus": "Verified",
-      "ScretKey1": "Your childood friend",
-      "SecretAnswer1": "Mani",
-      "ScretKey2": "Your favorite color",
-      "SecretAnswer2": "Red",
-      "LastLogin": "23-12-2018 10:13 AM",
-      "Password": "%fefTfs",
-      "Authendication": "Facebook",
-      "AuthendicationKey": "AZ5V4FYAQ10PQDRT",
-      "GST": "234567"
-    },
-    "ItemOnSale": [
-      {
-        "ItemCode": "KAAI_KATHARIKAAI",
-        "Price": "12.00",
-        "Quantity": "250",
-        "Weight": "gram"
-      }
-    ],
-    "ItemOnStock": [
-      {
-        "ItemCode": "KAAI_KATHARIKAAI",
-        "OpeningStock": "2000",
-        "Purchase": "2000",
-        "Sold": "1000",
-        "Balance": "3000"
-      }
-    ]
-  },
-  "VandiAppData": {
-    "Route": []
-  },
-  "ProducerAppData": {},
-  "PackerAppData": {},
-  "AdminAppData": {}
+  }
 }

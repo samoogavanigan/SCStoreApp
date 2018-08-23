@@ -1,3 +1,90 @@
+<div layout="row" ng-controller="homeController" ng-cloak cg-busy="">
+	<div flex="10"></div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">{{_PageContentData.LoginPage[_localeCode].TileTitle}}</h3>
+		</div>
+		<div class="panel-body">
+
+
+			<form name="loginForm" novalidate>
+				<div>
+
+					<div class="row">
+						<div class="col-xs-12">
+							<label>{{_PageContentData.LoginPage[_localeCode].NameLabel}}</label>
+							<input type="text" name="Name" class="form-control"
+								placeholder="{{_PageContentData.LoginPage[_localeCode].NameLabel}}"
+								ng-model="LoginUser.UserName" ng-minlength="5" ng-maxlength="10"
+								required>
+
+							<div class="help-block" ng-messages="loginForm.Name.$error"
+								ng-if="loginForm.Name.$touched">
+								<p ng-message="minlength">{{_CommonMessageData[_localeCode].minlength}}</p>
+								<p ng-message="maxlength">{{_CommonMessageData[_localeCode].maxlength}}</p>
+								<p ng-message="required">{{_CommonMessageData[_localeCode].required}}</p>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12">
+							<label>{{_PageContentData.LoginPage[_localeCode].PasswordLabel}}</label>
+							<input type="password" name="Password" class="form-control"
+								placeholder="{{_PageContentData.LoginPage[_localeCode].PasswordLabel}}"
+								ng-model="LoginUser.UserPassword" ng-minlength="5" ng-maxlength="10"
+								required>
+
+							<div class="help-block" ng-messages="loginForm.Password.$error"
+								ng-if="loginForm.Password.$touched">
+								<p ng-message="minlength">{{_CommonMessageData[_localeCode].minlength}}</p>
+								<p ng-message="maxlength">{{_CommonMessageData[_localeCode].maxlength}}</p>
+								<p ng-message="required">{{_CommonMessageData[_localeCode].required}}</p>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="row">&nbsp;</div>
+
+					<div class="row">
+						<div class="col-xs-6">
+							<button type="button" name="Clear" class="btn btn-block">{{_PageContentData.LoginPage[_localeCode].ClearButton}}</button>
+						</div>
+						<div class="col-xs-6">
+							<button type="button" name="Login"
+								class="btn btn-primary btn-block" ng-click="UserLogin()">{{_PageContentData.LoginPage[_localeCode].LoginButton}}</button>
+						</div>
+					</div>
+
+
+				</div>
+			</form>
+
+			<hr />
+			<div class="row">
+				<div class="col-xs-6">
+					<button type="button" class="btn btn-link btn-block">{{_PageContentData.LoginPage[_localeCode].ForgotLoginButton}}</button>
+				</div>
+				<div class="col-xs-6">
+					<button type="button" class="btn btn-link btn-block">{{_PageContentData.LoginPage[_localeCode].RegisterUserButton}}</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div flex="10"></div>
+</div>
+<!-- end row -->
+
+
+
+
 <div>
-<div ng-include src="'pages/registration.html'"></div>
+
+	<!-- 
+	<div ng-include src="'views/storeLocator.html'"></div>
+	<div ng-include src="'pages/registration.html'"></div>-->
 </div>
