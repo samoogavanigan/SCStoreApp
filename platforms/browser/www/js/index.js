@@ -35,7 +35,8 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         
-        app.apiRoot = 'http://localhost:3000/api/';
+        //app.apiRoot = 'http://localhost:3000/api/';
+        app.apiRoot = 'http://soccomauth.sikanam.com/api/';
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
