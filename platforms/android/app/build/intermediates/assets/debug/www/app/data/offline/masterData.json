@@ -1,0 +1,32 @@
+{
+  "AppMode": {
+    "EN": [
+      {
+        "AppName": "Consumer",
+        "AppCode": "CONSUMER"
+      },
+      {
+        "AppName": "Store",
+        "AppCode": "STORE"
+      },
+      {
+        "AppName": "Producer",
+        "AppCode": "PRODUCER"
+      }
+    ],
+    "TA": [
+      {
+        "AppName": "நுகர்வோர்",
+        "AppCode": "CONSUMER"
+      },
+      {
+        "AppName": "அங்காடி",
+        "AppCode": "STORE"
+      },
+      {
+        "AppName": "உற்பத்தியாளர்",
+        "AppCode": "PRODUCER"
+      }
+    ]
+  }
+}

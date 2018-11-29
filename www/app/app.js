@@ -112,6 +112,11 @@ myapp.config(function($routeProvider) {
 	    controller: "homeController"
 	});
 
+	$routeProvider.when("/productSetup", {
+		templateUrl: "views/Producer/ProductList.html",
+		controller: "productsController"
+});	
+
 	$routeProvider.otherwise({ redirectTo: '/home'});
 
 	});

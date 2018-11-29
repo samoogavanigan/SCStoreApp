@@ -1,0 +1,23 @@
+<div layout="row" ng-controller="productsController" ng-cloak cg-busy="">
+    <div flex="10"></div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{_PageContentData.StoreLocator[_localeCode].TileTitle}}</h3>
+        </div>
+        <div class="panel-body">
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <button type="button" class="btn btn-link btn-block">{{_PageContentData.StoreLocator[_localeCode].ClearButton}}</button>
+                </div>
+                <div class="col-xs-6">
+                    <button type="button" class="btn btn-link btn-block">{{_PageContentData.StoreLocator[_localeCode].FindButton}}</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div flex="10"></div>
+</div>
+<!-- end row -->

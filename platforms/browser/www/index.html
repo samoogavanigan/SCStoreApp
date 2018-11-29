@@ -19,34 +19,38 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html>
+<!--[if IE 8]><html class="ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
 
 <head>
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-	
-	<!-- SmartAddon.com Verification -->
+
+    <!-- SmartAddon.com Verification -->
     <meta name="smartaddon-verification" content="936e8d43184bc47ef34e25e426c508fe" />
-	<link rel="shortcut icon" href="favicon_16.ico"/>
-    <link rel="bookmark" href="favicon_16.ico"/>
+    <link rel="shortcut icon" href="favicon_16.ico" />
+    <link rel="bookmark" href="favicon_16.ico" />
 
-	<!--  <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />-->
+    <!--  <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />-->
 
-	
-	<!-- site css -->
+
+    <!-- site css -->
     <link rel="stylesheet" href="css/site.min.css">
     <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css"> -->
-	
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript" src="js/site.min.js"></script>
-	
-	
+
+
 
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
     <!--  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
@@ -62,20 +66,24 @@
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/angular-busy.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
 
-     
+
+
     <title>Social Commerce - App</title>
-    
-<!-- angular material style sheet -->
-<!--  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">-->
- 
-<!-- roboto font -->
-<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic"> -->
- 
-<!-- include custom CSS -->
-<link rel="stylesheet" href="app/assets/css/custom.css" />    
+
+    <!-- angular material style sheet -->
+    <!--  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">-->
+
+    <!-- roboto font -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic"> -->
+
+    <!-- include custom CSS -->
+    <link rel="stylesheet" href="app/assets/css/custom.css" />
+
+    <link rel="stylesheet" href="css/slideoutpage.css">
+    <link rel="stylesheet" href="css/slideout.css">
 </head>
 
 <body>
@@ -86,68 +94,112 @@
             <p class="event received">Device is Ready</p>
         </div>
     </div>
-		 
-<!--<script type="text/javascript" src="js/google/googlemap.js"></script>-->
+
+    <!--<script type="text/javascript" src="js/google/googlemap.js"></script>-->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    
+
     <script type="text/javascript">
         app.initialize();
     </script>
-    
 
 
-			
-<!-- container of our app -->
-<div class="container" ng-app="myApp">
-	<div ng-controller="pageContentController">
-		<div ng-include src="'views/header.html'"></div>
-		
-        <div class="row" ng-show="Site.Status=='Down'">
-            <div class="alert alert-danger">
-              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-              <strong>Oh snap!</strong> {{Site.Info[_localeCode].Message}}
+
+
+    <!-- container of our app -->
+    <div class="container" ng-app="myApp">
+
+        <nav id="menu" class="menu">
+            <div ng-controller="pageContentController">
+                <div ng-include src="'views/header.html'"></div>
             </div>
-        </div>
-        
-	    <div ng-include src="'views/navigation.html'"></div>    
-	
-	    <div id="view" ng-view></div>
-	
-	    <div ng-include src="'views/footer.html'"></div>
-	</div>   
-</div> <!-- end container -->
+            <a href="https://github.com/mango/slideout" target="_blank">
+                <header class="menu-header">
+                    <span class="menu-header-title">Tests</span>
+                </header>
+            </a>
+
+            <section class="menu-section">
+                <h3 class="menu-section-title">Docs</h3>
+                <ul class="menu-section-list">
+                    <li><a href="https://github.com/mango/slideout#installation" target="_blank">Installation</a></li>
+                    <li><a href="https://github.com/mango/slideout#usage" target="_blank">Usage</a></li>
+                    <li><a href="https://github.com/mango/slideout#api" target="_blank">API</a></li>
+                    <li><a href="https://github.com/mango/slideout#npm-scripts" target="_blank">npm-scripts</a></li>
+                </ul>
+            </section>
+
+            <section class="menu-section">
+                <h3 class="menu-section-title">Docs</h3>
+                <ul class="menu-section-list">
+                    <li><a href="https://github.com/mango/slideout#installation" target="_blank">Installation</a></li>
+                    <li><a href="https://github.com/mango/slideout#usage" target="_blank">Usage</a></li>
+                    <li><a href="https://github.com/mango/slideout#api" target="_blank">API</a></li>
+                    <li><a href="https://github.com/mango/slideout#npm-scripts" target="_blank">npm-scripts</a></li>
+                </ul>
+            </section>
 
 
-<!-- jquery -->
-<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+        </nav>
 
-<!-- include angular js -->
-<script type="text/javascript" src="js/angular/angular.min.js"></script>
-<script type="text/javascript" src="js/angular/angular-route.js"></script>
-<script type="text/javascript" src="js/angular/angular-resource.js"></script>
-<script type="text/javascript" src="js/angular/angular-messages.min.js"></script>
-<script type="text/javascript" src="js/angular/angular-touch.min.js"></script> 
-<script type="text/javascript" src="js/angular/angular-animate.min.js"></script> 
-<script type="text/javascript" src="js/angular/angular-busy.js"></script>
-<script type="text/javascript" src="js/angular/angular-recaptcha.min.js"></script>
+        <main id="panel" class="panel">
+            <header class="panel-header" style="margin:20px auto 40px">
+                <button style="top: 8px;height: 40px;" class="btn-hamburger js-slideout-toggle"></button>
+            </header>
 
 
 
-<!-- app -->
-<script type="text/javascript" src="app/app.js"></script>
-
-<!-- controller -->
-<script type="text/javascript" src="app/pageContentController.js"></script>
-<script type="text/javascript" src="app/home/homeController.js"></script>
-<script type="text/javascript" src="app/common/commonController.js"></script>
-<script type="text/javascript" src="app/products/products.controller.js"></script>
-<script type="text/javascript" src="app/products/products.factory.js"></script>
 
 
+            <div ng-controller="pageContentController">
 
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<!--
+
+                <div class="row" ng-show="Site.Status=='Down'">
+                    <div class="alert alert-danger">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>Oh snap!</strong> {{Site.Info[_localeCode].Message}}
+                    </div>
+                </div>
+
+                <div ng-include src="'views/navigation.html'"></div>
+
+                <div id="view" ng-view></div>
+
+                <div ng-include src="'views/footer.html'"></div>
+            </div>
+        </main>
+    </div> <!-- end container -->
+
+
+    <!-- jquery -->
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+
+    <!-- include angular js -->
+    <script type="text/javascript" src="js/angular/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular/angular-route.js"></script>
+    <script type="text/javascript" src="js/angular/angular-resource.js"></script>
+    <script type="text/javascript" src="js/angular/angular-messages.min.js"></script>
+    <script type="text/javascript" src="js/angular/angular-touch.min.js"></script>
+    <script type="text/javascript" src="js/angular/angular-animate.min.js"></script>
+    <script type="text/javascript" src="js/angular/angular-busy.js"></script>
+    <script type="text/javascript" src="js/angular/angular-recaptcha.min.js"></script>
+
+
+
+    <!-- app -->
+    <script type="text/javascript" src="app/app.js"></script>
+
+    <!-- controller -->
+    <script type="text/javascript" src="app/pageContentController.js"></script>
+    <script type="text/javascript" src="app/home/homeController.js"></script>
+    <script type="text/javascript" src="app/common/commonController.js"></script>
+    <script type="text/javascript" src="app/products/products.controller.js"></script>
+    <script type="text/javascript" src="app/products/products.factory.js"></script>
+
+
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!--
 <h3>My Google Maps Demo</h3>
     <div id="map"></div>
     <script>
@@ -169,10 +221,34 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe5KgIBbEeEuaoOpnAak2xUhTQLQJnzv8&callback=initMap">
     </script>
 -->
-    
 
 
-    
+    <script>
+        //mocha.setup('bdd');
+        var exports = null;
+
+        function assert(expr, msg) {
+            if (!expr) throw new Error(msg || 'failed');
+        }
+    </script>
+    <script src="js/slideout.min.js"></script>
+    <script src="js/slideoutpage.js"></script>
+    <script>
+        window.onload = function () {
+            document.querySelector('.js-slideout-toggle').addEventListener('click', function () {
+                slideout.toggle();
+            });
+
+            document.querySelector('.menu').addEventListener('click', function (eve) {
+                if (eve.target.nodeName === 'A') {
+                    slideout.close();
+                }
+            });
+
+            //var runner = mocha.run();
+        };
+    </script>
+
 </body>
 
 </html>
