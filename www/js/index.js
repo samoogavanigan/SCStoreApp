@@ -18,28 +18,34 @@
  */
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         this.bindEvents();
+        
+        // app.apiRoot = 'http://localhost:3000/api/';
+        // app.appRoot = 'http://localhost:3000/';
+
+        app.apiRoot = 'http://soccomauth.sikanam.com/api/';
+        app.appRoot = 'http://soccomauth.sikanam.com:3000/';
     },
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
+    bindEvents: function () {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener("offline", this.checkConnection, false);
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
+    onDeviceReady: function () {
         app.receivedEvent('deviceready');
-        
-        app.apiRoot = 'http://localhost:3000/api/';
-        //app.apiRoot = 'http://soccomauth.sikanam.com/api/';
+
+        angular.element('#sitePageCtrl').scope().getDefaultLanguage();
     },
     // Update DOM on a Received Event
-    receivedEvent: function(id) {
+    receivedEvent: function (id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -48,5 +54,21 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    },
+    // checkConnection offline Received Event
+    checkConnection: function (id) {
+        var networkState = navigator.connection.type;
+
+        var states = {};
+        states[Connection.UNKNOWN] = 'Unknown connection';
+        states[Connection.ETHERNET] = 'Ethernet connection';
+        states[Connection.WIFI] = 'WiFi connection';
+        states[Connection.CELL_2G] = 'Cell 2G connection';
+        states[Connection.CELL_3G] = 'Cell 3G connection';
+        states[Connection.CELL_4G] = 'Cell 4G connection';
+        states[Connection.CELL] = 'Cell generic connection';
+        states[Connection.NONE] = 'No network connection';
+
+        alert('Connection type: ' + states[networkState]);
     }
 };

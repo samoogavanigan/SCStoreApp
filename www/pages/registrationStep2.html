@@ -1,0 +1,106 @@
+<div layout="row" ng-controller="homeController" ng-cloak cg-busy="{promise:completeRegistrationPromise}">
+  <div flex="10"></div>
+	<div ng-controller="pageContentController">
+		<div ng-include src="'views/languageChoice.html'"></div>
+	</div>
+
+  <form name="completeRegistrationForm" novalidate>
+
+
+    <div class="modal-header">
+      <h4 class="modal-title">{{_PageContentData.Registration.TileTitle}}</h4>
+    </div>
+    <div class="modal-body">
+
+      <p>{{_PageContentData.Registration.SubTitle}}</p>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label>{{_PageContentData.Registration.NameLabel}}</label>
+          <input type="text" name="Name" class="form-control" placeholder="{{_PageContentData.Registration.NameLabel}}"
+            ng-model="newUserFormData.Name" ng-minlength="5" ng-maxlength="10" required>
+
+          <div class="help-block" ng-messages="newUserForm.Name.$error" ng-if="newUserForm.Name.$touched">
+            <p ng-message="minlength">{{_CommonMessageData.minlength}}</p>
+            <p ng-message="maxlength">{{_CommonMessageData.maxlength}}</p>
+            <p ng-message="required">{{_CommonMessageData.required}}</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label>{{_PageContentData.Registration.EmailLabel}}</label>
+          <input type="email" name="Email" class="form-control" placeholder="{{_PageContentData.Registration.EmailLabel}}"
+            ng-model="newUserFormData.Email" required>
+
+          <div class="help-block" ng-messages="newUserForm.Email.$error" ng-if="newUserForm.Email.$touched">
+            <p ng-message="email">{{_CommonMessageData.email}}</p>
+            <p ng-message="required">{{_CommonMessageData.required}}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label>{{_PageContentData.Registration.MobileLabel}}</label>
+          <input type="text" name="Mobile" class="form-control" ng-model="newUserFormData.Mobile" placeholder="{{_PageContentData.Registration.MobileLabel}}"
+            ng-minlength="10" ng-maxlength="10" required>
+
+          <div class="help-block" ng-messages="newUserForm.Mobile.$error" ng-if="newUserForm.Mobile.$touched">
+            <p ng-message="email">{{_CommonMessageData.mobile}}</p>
+            <p ng-message="minlength">{{_CommonMessageData.mobile}}</p>
+            <p ng-message="maxlength">{{_CommonMessageData.mobile}}</p>
+            <p ng-message="required">{{_CommonMessageData.required}}</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label>{{_PageContentData.Registration.AppUserTypeLabel}}</label>
+
+          <select name="AppsTypeChoice" class="selecter_3 form-control" ng-model="newUserFormData.AppsTypeChoice"
+            data-selecter-options='{"cover":"true"}' minlength="3" required>
+            <option value="-1">{{_CommonLabelData.PleaseSelect}}</option>
+            <option ng-repeat='appopt in _PageMasterData.AppMode' value="{{appopt.AppCode}}">{{appopt.AppName}}</option>
+          </select>
+
+          <div class="help-block" ng-messages="newUserForm.AppsTypeChoice.$error" ng-if="newUserForm.AppsTypeChoice.$touched">
+            <p ng-message="minlength">{{_CommonMessageData.emptyChoice}}</p>
+            <p ng-message="required">{{_CommonMessageData.required}}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="g-recaptcha" data-sitekey="6LevbkoUAAAAAHTvNuVOfMNGGq07cvOXtDIeTBHg"></div>
+          <div vc-recaptcha key="model.key" ng-model="newUserForm.gRecaptchaResponse" lang="model.lang" ng-model="myFields.myRecaptchaResponse"></div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">{{_CommonButtonData.Clear}}</button>
+      <button type="button" class="btn btn-success" ng-click="submitRegistration()">{{_CommonButtonData.Register}}</button>
+    </div>
+
+  </form>
+  
+  <hr/>
+  <div class="row">
+    <div class="col-xs-6">
+      <button type="button" class="btn btn-link btn-block">{{_PageContentData.LoginPage.ForgotLoginButton}}</button>
+    </div>
+    <div class="col-xs-6">
+      <button type="button" class="btn btn-link btn-block" ng-click="gotoPage('home')">{{_PageContentData.LoginPage.LoginButton}}</button>
+    </div>
+  </div>  
+
+  <div flex="10"></div>
+</div> <!-- end row -->

@@ -3,7 +3,7 @@
 
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<h3 class="panel-title">{{_PageContentData.StoreLocator[_localeCode].TileTitle}}</h3>
+			<h3 class="panel-title">{{_PageContentData.StoreLocator.TileTitle}}</h3>
 		</div>
 		<div class="panel-body">
 
@@ -20,7 +20,7 @@
 				<!--<div class="row">
 					<div class="col-xs-6">
 						<select name="storeLocatorForm_District" class="selecter_3 form-control"
-							ng-repeat="admdata in _AdministrativeData[_localeCode]"
+							ng-repeat="admdata in _AdministrativeData"
 							placeholder="Please select"
 							ng-model="storeLocatorForm.District">
 							<option value="{{admdata.District}}">{{admdata.District}}</option>
@@ -28,7 +28,7 @@
 					</div>
 					<div class="col-xs-6">
 						<select name="storeLocatorForm_Taluk" class="selecter_3 form-control"
-							ng-repeat="admdata in _AdministrativeData[_localeCode]"
+							ng-repeat="admdata in _AdministrativeData"
 							ng-model="storeLocatorForm.Taluk">
 							<option value="{{admdata.Taluk}}">{{admdata.Taluk}}</option>
 						</select>
@@ -38,7 +38,7 @@
 
 						<i class="search-icon glyphicon glyphicon-search"></i> <input
 							type="text" class="form-control search-query"
-							placeholder="{{_PageContentData.StoreLocator[_localeCode].AddressLabel}}"
+							placeholder="{{_PageContentData.StoreLocator.AddressLabel}}"
 							ng-model="storeLocatorForm.streetAddress" />
 
 					</div>
@@ -108,10 +108,10 @@
 			<hr />
 			<div class="row">
 				<div class="col-xs-6">
-					<button type="button" class="btn btn-link btn-block">{{_PageContentData.StoreLocator[_localeCode].ClearButton}}</button>
+					<button type="button" class="btn btn-link btn-block">{{_PageContentData.StoreLocator.ClearButton}}</button>
 				</div>
 				<div class="col-xs-6">
-					<button type="button" class="btn btn-link btn-block">{{_PageContentData.StoreLocator[_localeCode].FindButton}}</button>
+					<button type="button" class="btn btn-link btn-block">{{_PageContentData.StoreLocator.FindButton}}</button>
 				</div>
 			</div>
 

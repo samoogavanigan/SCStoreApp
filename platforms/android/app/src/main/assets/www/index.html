@@ -111,53 +111,61 @@
 
         <nav id="menu" class="menu">
             <div ng-controller="pageContentController">
-                <div ng-include src="'views/header.html'"></div>
+                <div ng-include src="'views/languageChoice.html'"></div>
             </div>
-            <a href="https://github.com/mango/slideout" target="_blank">
+            <a href="https://github.com/mango/slideout">
                 <header class="menu-header">
-                    <span class="menu-header-title">Tests</span>
+                    <span class="menu-header-title"><img src="css/assets/avatar_m.png" alt="Avatar" class="avatar">&nbsp;</span>Ramani<br />
                 </header>
             </a>
 
             <section class="menu-section">
                 <h3 class="menu-section-title">Docs</h3>
                 <ul class="menu-section-list">
-                    <li><a href="https://github.com/mango/slideout#installation" target="_blank">Installation</a></li>
-                    <li><a href="https://github.com/mango/slideout#usage" target="_blank">Usage</a></li>
-                    <li><a href="https://github.com/mango/slideout#api" target="_blank">API</a></li>
-                    <li><a href="https://github.com/mango/slideout#npm-scripts" target="_blank">npm-scripts</a></li>
+                    <li><a href="https://github.com/mango/slideout#installation">Installation</a></li>
+                    <li><a href="https://github.com/mango/slideout#usage">Usage</a></li>
+                    <li><a href="https://github.com/mango/slideout#api">API</a></li>
+                    <li><a href="https://github.com/mango/slideout#npm-scripts">npm-scripts</a></li>
                 </ul>
             </section>
 
             <section class="menu-section">
                 <h3 class="menu-section-title">Docs</h3>
                 <ul class="menu-section-list">
-                    <li><a href="https://github.com/mango/slideout#installation" target="_blank">Installation</a></li>
-                    <li><a href="https://github.com/mango/slideout#usage" target="_blank">Usage</a></li>
-                    <li><a href="https://github.com/mango/slideout#api" target="_blank">API</a></li>
-                    <li><a href="https://github.com/mango/slideout#npm-scripts" target="_blank">npm-scripts</a></li>
+                    <li><a href="https://github.com/mango/slideout#installation">Installation</a></li>
+                    <li><a href="https://github.com/mango/slideout#usage">Usage</a></li>
+                    <li><a href="https://github.com/mango/slideout#api">API</a></li>
+                    <li><a href="https://github.com/mango/slideout#npm-scripts">npm-scripts</a></li>
                 </ul>
             </section>
 
+            <a href="">
+                <header class="menu-header" ng-controller="userController">
+                    <span class="menu-header-title" ng-click="OpenLogout()"><i class="fas fa-sign-out-alt">&nbsp;</i>Logout</span>
+                </header>
+            </a>
 
         </nav>
 
+
+        <div id="sitePageCtrl" ng-controller="pageContentController">
+            <div class="row" ng-show="SiteMessage.status == 'In-progress'">
+                <div class="spinner">
+                </div>
+            </div>
+        </div>
+
+
         <main id="panel" class="panel">
-            <header class="panel-header" style="margin:20px auto 40px">
+            <header id="leftNavSlider" class="panel-header" style="margin:20px auto 40px;display: none;">
                 <button style="top: 8px;height: 40px;" class="btn-hamburger js-slideout-toggle"></button>
             </header>
 
-
-
-
-
             <div ng-controller="pageContentController">
-
-
-                <div class="row" ng-show="Site.Status=='Down'">
-                    <div class="alert alert-danger">
-                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                        <strong>Oh snap!</strong> {{Site.Info[_localeCode].Message}}
+                <div class="row" ng-show="SiteMessage.ShowAlert">
+                    <div ng-class="{'alert alert-danger' : SiteMessage.AlertType == 'danger'}">
+                        <button ng-click="closeSiteMessage()" type="button" class="close" aria-hidden="true">&times;</button>
+                        <strong>{{SiteMessage.AlertTitle}}</strong> {{SiteMessage.AlertMessage}}
                     </div>
                 </div>
 
@@ -168,12 +176,17 @@
                 <div ng-include src="'views/footer.html'"></div>
             </div>
         </main>
+        <div ng-controller="userController">
+            <div ng-include src="'pages/partial/_messageModal.html'"></div>
+        </div>
     </div> <!-- end container -->
+
 
 
     <!-- jquery -->
     <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
-
+    <!-- bootstrap -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- include angular js -->
     <script type="text/javascript" src="js/angular/angular.min.js"></script>
     <script type="text/javascript" src="js/angular/angular-route.js"></script>
@@ -184,14 +197,18 @@
     <script type="text/javascript" src="js/angular/angular-busy.js"></script>
     <script type="text/javascript" src="js/angular/angular-recaptcha.min.js"></script>
 
-
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
 
     <!-- app -->
     <script type="text/javascript" src="app/app.js"></script>
 
     <!-- controller -->
     <script type="text/javascript" src="app/pageContentController.js"></script>
+    <script type="text/javascript" src="app/register/registerController.js"></script>
+    <script type="text/javascript" src="app/login/loginController.js"></script>
+    <script type="text/javascript" src="app/user/userController.js"></script>
     <script type="text/javascript" src="app/home/homeController.js"></script>
+    <script type="text/javascript" src="app/home/homeTileDashboardController.js"></script>
     <script type="text/javascript" src="app/common/commonController.js"></script>
     <script type="text/javascript" src="app/products/products.controller.js"></script>
     <script type="text/javascript" src="app/products/products.factory.js"></script>
@@ -248,7 +265,6 @@
             //var runner = mocha.run();
         };
     </script>
-
 </body>
 
 </html>

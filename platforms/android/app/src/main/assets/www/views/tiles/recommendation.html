@@ -1,0 +1,446 @@
+<div class="panel panel-default" ng-controller="homeTileRecommendationController" ng-init="getRecommendations()"
+    ng-cloak cg-busy="">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{_PageContentData.TileDashboard.Recommendation.TileTitle}}</h3>
+    </div>
+    <div class="panel-body" ng-click="ClickPanel($event)">
+
+        <style>
+            .refavatar {
+                width: 50px !important;
+                height: 50px !important;
+                top: 55%;
+                position: absolute;
+                left: 5%;
+                border: 1px solid #4FC1E9;
+                box-shadow: 2px 2px #3BAFDA;
+                cursor: pointer;
+                border-radius: 25px !important;
+            }
+
+            .prodavatar {
+                width: 50px !important;
+                height: 50px !important;
+                top: 1%;
+                position: absolute;
+                right: 5%;
+                border: 1px solid #4FC1E9;
+                box-shadow: 2px 2px #3BAFDA;
+                cursor: pointer;
+                border-radius: 25px !important;
+            }
+
+            .likeme {
+                width: 50px !important;
+                height: 50px !important;
+                margin-top: -15px;
+                position: absolute;
+                top: 0%;
+                right: 5%;
+                border: none;
+                cursor: pointer;
+                border-radius: 25px !important;
+            }
+            .icon {
+                position:relative;
+                text-align:center;
+                width:0px;
+                height:0px;
+                padding:20px;
+                border-top-right-radius: 	20px;
+                border-top-left-radius: 	20px;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 	20px; 
+                -moz-border-radius: 		20px 20px 20px 20px;
+                -webkit-border-radius: 		20px 20px 20px 20px;
+                -khtml-border-radius: 		20px 20px 20px 20px; 	
+                
+                margin:0 5px 0 0;
+                cursor:pointer;
+                background:#6d6e71 ;
+                color:#262626;
+                transition: 0.5s;
+                -moz-transition: 0.5s;
+                -webkit-transition: 0.5s;
+                -o-transition: 0.5s; 	
+            }
+            .icon i {
+                font-size:20px;
+                position:absolute;
+                left:9px;
+                top:10px;
+            }
+            
+            .icon.hover {
+                background:#262626 ;
+                color:#6d6e71;
+                transition: 0.5s;
+                -moz-transition: 0.5s;
+                -webkit-transition: 0.5s;
+                -o-transition: 0.5s;
+                -webkit-filter:	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+                -moz-filter: 	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+                -ms-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+                -o-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+                filter: 			drop-shadow(0 1px 10px rgba(0,0,0,.8));	 	
+            }
+
+            #myTabContent .popover {
+                left: 2px !important;
+            }
+            #myTabContent .popover .popover.top .arrow {
+                left: 20% !important;
+            }
+
+    .rectabs, .rectabs_active {
+      list-style: none;
+      z-index: 15;
+    }
+    .rectabs i, .rectabs_active i {
+      width: 50px;
+      height: 50px;
+    }
+    /*icon circle*/
+    .rectabs li, .rectabs_active li {
+      float: left;
+      padding: 5px;
+      margin: 15px 5px 5px 5px;
+      background: #5D9CEC;
+      width: 50px;
+      height: 50px;
+      z-index: 15;
+      
+      /* Only round the top corners */
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      -khtml-border-radius: 50%;
+    }
+    
+    .rectabs_active li:hover {
+      float: left;
+      padding: 5px;
+      background: #5D9CEC;
+      width: 50px;
+      height: 50px;
+      z-index: 2;
+      
+      /* Only round the bottom corners */
+      -webkit-border-top-left-radius: 0px;
+      -webkit-border-top-right-radius: 0px;
+      -moz-border-radius-topleft: 0px;
+      -moz-border-radius-topright: 0px;
+      
+      border: 1px solid #4A89DC;
+      border-top: 0px;
+      border-right: 0px;
+      border-left: 0px;
+    }
+
+    .rectabs_active li:hover:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background: white;
+      margin-left: -24px;
+      margin-top: 5px;
+      z-index: -20;
+
+      -webkit-border-radius: 0 20px 0 0;
+      -moz-border-radius: 0 20px 0 0;
+      border-radius: 0 20px 0 0;
+      -khtml-border-radius: 0 20px 0 0;
+      border: 1px solid #4A89DC;
+      border-left: 1px solid white;
+      border-bottom: 1px solid white;
+    }
+
+    .rectabs_active li:hover:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background: white;
+      margin-left: -14px;
+      margin-top: 5px;
+      z-index: -20;
+     
+      -webkit-border-radius: 20px 0 0 0;
+      -moz-border-radius: 20px 0 0 0;
+      border-radius: 20px 0 0 0;
+      -khtml-border-radius: 20px 0 0 0;
+      border: 1px solid #4A89DC;
+      border-right: 1px solid white;
+      border-bottom: 1px solid white;
+    }
+
+    .rectabs a, .rectabs_active a {
+      float: left;
+      text-decoration: none;
+      color: black;
+      z-index: -21;
+      padding: 5px 5px 5px 3px;
+    }
+    
+    .rectabs_active a:hover {
+       padding: 5px 5px 5px 3px;
+    }
+
+    .rectabs_active a:hover:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 65px;
+      height: 20px;
+      background: #5D9CEC;
+      margin-left: -25px;
+      margin-top: 5px;
+      z-index: -21;
+    }
+
+    .rectabs_active a:hover:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background: #5D9CEC;
+      margin-left: -12px;
+      margin-top: 5px;
+      z-index: -21;
+    }
+
+    
+    .rectabs_active i:hover {
+      color: white;
+    }
+
+    .rectabs_content {
+        background: #5D9CEC;
+        width: 100%;
+        height: 100%;
+        margin-bottom: -6px;
+        border-bottom: 1px solid #4A89DC;
+    }
+
+    #rectabs_content2 {
+        background: #5D9CEC;
+        margin-bottom: -6px;
+        border-bottom: 1px solid #4A89DC;
+        margin-left: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 97%;
+        height: 250px;
+        position: absolute;
+        bottom: 236px;
+        z-index: 15;
+    }
+            
+        </style>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px;margin-top: -15px;">
+
+
+            <div class="panel">
+                <div class="tabbable tabs-below">
+                    <div id="myTabContent" class="tab-content" style="padding: 0px;">
+                        <div class="tab-pane fade active in" id="home2">
+
+                            <div class="jumbotron">
+                                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"
+                                    data-interval="false">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-example-generic" ng-repeat="item in recommendations"
+                                            data-slide-to="{{$index + 0}}" ng-class="{'active': $index == 0}"></li>
+                                        <!-- <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div ng-class="{'item' : true , 'active' : $index == 0}" ng-repeat="item in recommendations">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" style="min-height: 300px;">
+                                                <img src="{{item.imagesrc}}" alt="Capture" border="0" style="max-width: 100%; max-height: 100%;" />
+                                                </div>
+                                                <img src="css/assets/avatar_m.png" alt="Avatar" class="refavatar">
+                                                <img src="css/assets/avatar_w.png" alt="Avatar" class="prodavatar">
+                                            </div>
+
+                                            <div class="jumbotron-contents">
+
+                                                <h2>{{item.ItemName}}</h2>
+                                                <h4>{{item.Specification}}</h4>
+
+                                            </div>
+                                        </div>
+                                        <!-- <div class="item"><img src="img/slider2.jpg"></div>
+                                    <div class="item"><img src="img/slider3.jpg"></div> -->
+                                    </div>
+
+
+                                    <a class="left carousel-control" data-target="#carousel-example-generic" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                    </a>
+                                    <a class="right carousel-control" data-target="#carousel-example-generic"
+                                        data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </a>
+                                </div>
+
+                                <div id="rectabs_content2" style="display: block">show me</div>
+
+                                <div class="row">
+                                    <!-- <div uib-collapse="isCollapsed">
+                                            <div class="rectabs_content">Some content</div>
+                                        </div> -->
+
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" style="z-index: 15; margin-left: 5%;">
+                                        <ul class="rectabs_active group" style="width:500px">
+                                            <li><a data-target="#"><i class="fas fa-route fa-2x"></i></a></li>
+                                            <li><a data-target="#"><i class="fas fa-rupee-sign fa-2x"></i></a></li>
+                                            <li><a data-target="#"><i class="fas fa-thumbs-up fa-2x"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="tab-pane fade" id="profile2">
+                            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                                Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson
+                                artisan four loko farm-to-table craft beer twee. </p>
+                        </div>
+                        <div class="tab-pane fade" id="dropdown2-1">
+                            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's
+                                organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify
+                                pitchfork tattooed craft beer, iphone...</p>
+                        </div>
+                        <div class="tab-pane fade" id="dropdown2-2">
+                            <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold
+                                out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack
+                                portland seitan DIY, art party locavore wolf cliche ... </p>
+                        </div>
+                    </div>
+                    <ul id="myTab2" class="nav nav-tabs nav-justified">
+                        <li class="active"><a data-target="#home2" data-toggle="tab">Home</a></li>
+                        <li><a data-target="#profile2" data-toggle="tab">Profile</a></li>
+                        <li class="dropdown dropup">
+                            <a data-target="#" id="myTabDrop2-1" class="dropdown-toggle" data-toggle="dropdown">Dropdown
+                                <b class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                                <li><a data-target="#dropdown2-1" tabindex="-1" data-toggle="tab">@fat</a></li>
+                                <li><a data-target="#dropdown2-2" tabindex="-1" data-toggle="tab">@mdo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px;">
+            <div class="panel-group panel-group-lists" id="accordion2">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion2" data-target="#collapseFour">
+                                Collapsible Group Item #1
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                            you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion2" data-target="#collapseFive">
+                                Collapsible Group Item #2
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                            you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion2" data-target="#collapseSix">
+                                Collapsible Group Item #3
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                            you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <form name="RecommendationForm" novalidate>
+
+        </form>
+
+        <hr />
+        <div class="row">
+            <div class="col-xs-6">
+                <button type="button" class="btn btn-link btn-block">{{_PageContentData.TileDashboard.ClearButton}}</button>
+            </div>
+            <div class="col-xs-6">
+                <button type="button" class="btn btn-link btn-block">{{_PageContentData.TileDashboard.FindButton}}</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // $(document).ready(function () {
+
+        //     $(".rectabs li").bind("click", function () {
+        //         console.log('test');
+        //         // e.preventDefault();
+        //         // $("li").removeClass("active");
+        //         // $(this).addClass("active");
+        //         if ($("#rectabs_content2").is(":hidden")) {
+        //             $("#rectabs_content2").show("slow");
+        //         } else {
+        //             $("#rectabs_content2").slideUp();
+        //         }
+        //     });
+
+        // });
+
+
+    </script>
+</div>

@@ -9,7 +9,8 @@
     "plugins": {
       "cordova-plugin-file": {},
       "cordova-plugin-media-capture": {},
-      "cordova-plugin-sslcertificatechecker": {}
+      "cordova-plugin-sslcertificatechecker": {},
+      "cordova-plugin-network-information": {}
     }
   },
   "dependencies": {

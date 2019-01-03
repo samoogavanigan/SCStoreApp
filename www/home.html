@@ -1,7 +1,10 @@
 <div layout="row" ng-controller="homeController" ng-cloak cg-busy="">
 	<div flex="10"></div>
-
-	<div class="panel panel-default">
+	<div ng-controller="pageContentController">
+		<div ng-include src="'views/languageChoice.html'"></div>
+	</div>
+	<div flex="10"></div>
+	<!-- <div class="panel panel-default">
 		<div class="panel-heading">
 			<h3 class="panel-title">{{_PageContentData.LoginPage[_localeCode].TileTitle}}</h3>
 		</div>
@@ -14,13 +17,10 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<label>{{_PageContentData.LoginPage[_localeCode].NameLabel}}</label>
-							<input type="text" name="Name" class="form-control"
-								placeholder="{{_PageContentData.LoginPage[_localeCode].NameLabel}}"
-								ng-model="LoginUser.UserName" ng-minlength="5" ng-maxlength="10"
-								required>
+							<input type="text" name="Name" class="form-control" placeholder="{{_PageContentData.LoginPage[_localeCode].NameLabel}}"
+							 ng-model="LoginUser.UserName" ng-minlength="5" ng-maxlength="10" required>
 
-							<div class="help-block" ng-messages="loginForm.Name.$error"
-								ng-if="loginForm.Name.$touched">
+							<div class="help-block" ng-messages="loginForm.Name.$error" ng-if="loginForm.Name.$touched">
 								<p ng-message="minlength">{{_CommonMessageData[_localeCode].minlength}}</p>
 								<p ng-message="maxlength">{{_CommonMessageData[_localeCode].maxlength}}</p>
 								<p ng-message="required">{{_CommonMessageData[_localeCode].required}}</p>
@@ -32,13 +32,10 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<label>{{_PageContentData.LoginPage[_localeCode].PasswordLabel}}</label>
-							<input type="password" name="Password" class="form-control"
-								placeholder="{{_PageContentData.LoginPage[_localeCode].PasswordLabel}}"
-								ng-model="LoginUser.UserPassword" ng-minlength="5" ng-maxlength="10"
-								required>
+							<input type="password" name="Password" class="form-control" placeholder="{{_PageContentData.LoginPage[_localeCode].PasswordLabel}}"
+							 ng-model="LoginUser.UserPassword" ng-minlength="5" ng-maxlength="10" required>
 
-							<div class="help-block" ng-messages="loginForm.Password.$error"
-								ng-if="loginForm.Password.$touched">
+							<div class="help-block" ng-messages="loginForm.Password.$error" ng-if="loginForm.Password.$touched">
 								<p ng-message="minlength">{{_CommonMessageData[_localeCode].minlength}}</p>
 								<p ng-message="maxlength">{{_CommonMessageData[_localeCode].maxlength}}</p>
 								<p ng-message="required">{{_CommonMessageData[_localeCode].required}}</p>
@@ -54,8 +51,7 @@
 							<button type="button" name="Clear" class="btn btn-block">{{_PageContentData.LoginPage[_localeCode].ClearButton}}</button>
 						</div>
 						<div class="col-xs-6">
-							<button type="button" name="Login"
-								class="btn btn-primary btn-block" ng-click="UserLogin()">{{_PageContentData.LoginPage[_localeCode].LoginButton}}</button>
+							<button type="button" name="Login" class="btn btn-primary btn-block" ng-click="UserLogin()">{{_PageContentData.LoginPage[_localeCode].LoginButton}}</button>
 						</div>
 					</div>
 
@@ -69,12 +65,12 @@
 					<button type="button" class="btn btn-link btn-block">{{_PageContentData.LoginPage[_localeCode].ForgotLoginButton}}</button>
 				</div>
 				<div class="col-xs-6">
-					<button type="button" class="btn btn-link btn-block">{{_PageContentData.LoginPage[_localeCode].RegisterUserButton}}</button>
+					<button type="button" class="btn btn-link btn-block" ng-controller="registerController" ng-click="newRegistration()">{{_PageContentData.LoginPage[_localeCode].RegisterUserButton}}</button>
 				</div>
 			</div>
 
 		</div>
-	</div>
+	</div> -->
 	<div flex="10"></div>
 </div>
 <!-- end row -->

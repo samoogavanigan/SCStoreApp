@@ -43,6 +43,10 @@
                         {
                             "xml": "<allow-navigation href=\"cdvfile:*\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -72,6 +76,10 @@
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
                             "count": 1
                         }
                     ]
@@ -105,6 +113,9 @@
             "PACKAGE_NAME": "com.sikanam.scstore"
         },
         "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.sikanam.scstore"
+        },
+        "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.sikanam.scstore"
         }
     },
@@ -458,6 +469,23 @@
                 "cordova"
             ],
             "runs": true
+        },
+        {
+            "id": "cordova-plugin-network-information.network",
+            "file": "plugins/cordova-plugin-network-information/www/network.js",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "navigator.connection",
+                "navigator.network.connection"
+            ]
+        },
+        {
+            "id": "cordova-plugin-network-information.Connection",
+            "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "Connection"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -469,6 +497,7 @@
         "cordova-plugin-device-motion": "1.2.5",
         "cordova-plugin-device-orientation": "1.0.7",
         "cordova-plugin-dialogs": "1.2.1",
-        "cordova-plugin-file": "6.0.1"
+        "cordova-plugin-file": "6.0.1",
+        "cordova-plugin-network-information": "1.2.1"
     }
 }
